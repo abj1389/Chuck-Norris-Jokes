@@ -59,11 +59,13 @@ body {
 }
 
 .inputs {
+  width: 80%;
+  margin: 0 auto;
   justify-content: space-between;
 }
 .inputs__reset {
   border: none;
-  width: 240px;
+  width: 40%;
   padding: 30px 0;
   margin: 15px;
   color: #FFD0B3;
@@ -71,7 +73,7 @@ body {
 }
 .inputs__new-joke {
   border: none;
-  width: 240px;
+  width: 40%;
   padding: 30px 0;
   margin: 15px;
   color: #FFF8F4;

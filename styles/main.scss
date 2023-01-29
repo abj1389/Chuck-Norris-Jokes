@@ -48,11 +48,13 @@ body{
 }
 
 .inputs{
+    width: 80%;
+    margin: 0 auto;
     justify-content: space-between;
 
     &__reset{
         border: none;
-        width: 240px;
+        width: 40%;
         padding: 30px 0;
         margin: 15px;
         color: $color2;
@@ -61,7 +63,7 @@ body{
 
     &__new-joke{
         border: none;
-        width: 240px;
+        width: 40%;
         padding: 30px 0;
         margin: 15px;
         color: $color3;
