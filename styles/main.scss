@@ -1,8 +1,89 @@
-.categories__button--selected{
-    background-color: green;
-    color: white
+@import 'variables';
+@import 'mixins';
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat";
+    justify-content: center;
+    text-align: center;
 }
 
-.categories__button--not-selected{
-    background-color: grey;
+.title{
+    width: 80%;
+    margin: auto;
+    padding: 20px 40px;
+    font-size: $mobile_title_size;
+    font-weight: bold;
+    color: $color1;
+    background-color: $color2;
+}
+
+.categories-title__text{
+    font-size: 30px;
+    font-weight: regular;
+}
+
+.categories{
+    width: 100%;
+
+    &__button{
+        width: 60%;
+        padding: 30px 0;
+        font-size: $categories_size;
+        margin: 10px 0;
+
+        &--selected{
+            border: 3px solid $color2;
+            background-color: $color3;
+            color: $color5;
+        }
+
+        &--not-selected{
+            border: 3px solid $color7;
+            background-color: $color4;
+            color: $color6;
+        }
+    }
+}
+
+.inputs{
+    justify-content: space-between;
+
+    &__reset{
+        border: none;
+        width: 240px;
+        padding: 30px 0;
+        margin: 15px;
+        color: $color2;
+        background-color: $color3;
+    }
+
+    &__new-joke{
+        border: none;
+        width: 240px;
+        padding: 30px 0;
+        margin: 15px;
+        color: $color3;
+        background-color: $color2;
+    }
+}
+
+.joke-box{
+    width: 80%;
+    margin: 20px auto;
+    background-color: $color2;
+    padding: 40px 40px;
+
+    &__text{
+        color: $color1;
+        font-size: $mobile_jokes_size;
+        font-weight: bold;
+        padding: 50px 20px 70px 20px;
+    }
+
+    &__img{
+        width: $chuck_img;
+        padding: 60px 0;
+    }
 }

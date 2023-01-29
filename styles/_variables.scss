@@ -1,0 +1,34 @@
+//Variables
+$color1: #EF631A;
+$color2: #FFD0B3;
+$color3: #FFF8F4;
+$color4: #ffffff;
+$color5: #000000;
+$color6: #A0A0A0;
+$color7: #F5F5F5;
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../assets/fonts/Montserrat-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../assets/fonts/Montserrat-Regular.ttf);
+    font-weight: regular;
+}
+
+$categories_size: 18px;
+$mobile_title_size: 20px;
+$pc_title_size: 24px;
+$mobile_jokes_size: 20px;
+$pc_jokes_size: 30px;
+$chuck_img: 240px;
+
+/* La sección del chiste a partir de tablet ocupa 350px siempre
+La letra es Montserrat (se puede descargar de google fonts)
+Tamaño de letra de las opciones en todos los tamaños 18px
+Tamaño de letra del título (móvil-20px resto-24px)
+Tamaño de letra de los chistes (móvil-20px resto-30px)
+La imagen de chuck tiene un ancho de 240px siempre */

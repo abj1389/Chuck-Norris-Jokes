@@ -1,8 +1,96 @@
-.categories__button--selected {
-  background-color: green;
-  color: white;
+@charset "UTF-8";
+@font-face {
+  font-family: "Montserrat";
+  src: url(../assets/fonts/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../assets/fonts/Montserrat-Regular.ttf);
+  font-weight: regular;
+}
+/* La sección del chiste a partir de tablet ocupa 350px siempre
+La letra es Montserrat (se puede descargar de google fonts)
+Tamaño de letra de las opciones en todos los tamaños 18px
+Tamaño de letra del título (móvil-20px resto-24px)
+Tamaño de letra de los chistes (móvil-20px resto-30px)
+La imagen de chuck tiene un ancho de 240px siempre */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat";
+  justify-content: center;
+  text-align: center;
 }
 
+.title {
+  width: 80%;
+  margin: auto;
+  padding: 20px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #EF631A;
+  background-color: #FFD0B3;
+}
+
+.categories-title__text {
+  font-size: 30px;
+  font-weight: regular;
+}
+
+.categories {
+  width: 100%;
+}
+.categories__button {
+  width: 60%;
+  padding: 30px 0;
+  font-size: 18px;
+  margin: 10px 0;
+}
+.categories__button--selected {
+  border: 3px solid #FFD0B3;
+  background-color: #FFF8F4;
+  color: #000000;
+}
 .categories__button--not-selected {
-  background-color: grey;
+  border: 3px solid #F5F5F5;
+  background-color: #ffffff;
+  color: #A0A0A0;
+}
+
+.inputs {
+  justify-content: space-between;
+}
+.inputs__reset {
+  border: none;
+  width: 240px;
+  padding: 30px 0;
+  margin: 15px;
+  color: #FFD0B3;
+  background-color: #FFF8F4;
+}
+.inputs__new-joke {
+  border: none;
+  width: 240px;
+  padding: 30px 0;
+  margin: 15px;
+  color: #FFF8F4;
+  background-color: #FFD0B3;
+}
+
+.joke-box {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #FFD0B3;
+  padding: 40px 40px;
+}
+.joke-box__text {
+  color: #EF631A;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 50px 20px 70px 20px;
+}
+.joke-box__img {
+  width: 240px;
+  padding: 60px 0;
 }/*# sourceMappingURL=main.css.map */

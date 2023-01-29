@@ -8,15 +8,15 @@ let selectedList = [];
 let inputSelected = [];
 
 window.onload = () => {
-    container = document.getElementsByClassName("container__list")[0];
+    container = document.getElementsByClassName("categories")[0];
     getCategories().then(respuesta => printButton(respuesta));
-    reset = document.getElementsByClassName("container__input__reset")[0];
+    reset = document.getElementsByClassName("inputs__reset")[0];
     reset.addEventListener("click", () => clean());
-    input = document.getElementsByClassName("container__input__new-joke")[0];
+    input = document.getElementsByClassName("inputs__new-joke")[0];
     input.addEventListener("click", () => {
         sendInputSelected().then(resp => printNewJoke(resp.value));
     });
-    joke = document.getElementsByClassName("joke")[0];
+    joke = document.getElementsByClassName("joke-box__text")[0];
 }
 
 
@@ -29,7 +29,7 @@ const getCategories = async () => {
 const printButton = (categories) => {
     container.innerHTML = '';
     categories.forEach(element => {
-        container.innerHTML = container.innerHTML + `<button class="categories__button--not-selected">${element}</button>`;
+        container.innerHTML = container.innerHTML + `<button class="categories__button categories__button--not-selected">${element}</button>`;
     });
 
     categories.forEach((element, i) => {
